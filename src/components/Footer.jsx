@@ -1,7 +1,7 @@
 import React from 'react';
 import { BsInstagram, BsTwitterX } from 'react-icons/bs';
 import { FaFacebook } from 'react-icons/fa';
-import logo_img from '../assets/Slystocks.png'
+import logo_img from '../assets/SlyStocks.png'
 
 const Footer = () => {
   return (
