@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react'
 import { BiCart, BiSearch, BiUser } from 'react-icons/bi'
-import { ShopContext } from '../Context/ShopContext'
+import { ShopContext } from '../context/ShopContext'
 import { Link } from 'react-router-dom'
 import Cart from '../pages/cart/Cart'
 import logo_img from '../assets/SlyStocks.png'
