@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { IoMdAdd, IoMdRemove } from 'react-icons/io';
 import { FiTrash2 } from 'react-icons/fi';
-import { ShopContext } from '../../Context/ShopContext'
+import { ShopContext } from '../../context/ShopContext'
 
 const CartDetails = ({ item }) => {
   const { removeFromCart, increaseAmount, decreaseAmount } = useContext(ShopContext);

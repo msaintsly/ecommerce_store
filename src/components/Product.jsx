@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { FaEye } from "react-icons/fa";
 import { BiCartAdd } from "react-icons/bi";
 import { Link } from "react-router-dom";
-import { ShopContext } from "../Context/ShopContext";
+import { ShopContext } from "../context/ShopContext";
 
 const Product = () => {
   const { filteredProducts, addToCart } = useContext(ShopContext);
