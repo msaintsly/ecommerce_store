@@ -10,7 +10,6 @@ export const AuthProvider = ({ children }) => {
     if (user) setIsAuthenticated(true);
   }, []);
 
-  // ✅ LOGIN: Match against registered users
   const login = ({ email, password }) => {
     const users = JSON.parse(localStorage.getItem("users") || "[]");
     const found = users.find(
@@ -26,7 +25,6 @@ export const AuthProvider = ({ children }) => {
     return false;
   };
 
-  // ✅ SIGNUP: Create new user and log in
   const signup = ({ email, password }) => {
     const users = JSON.parse(localStorage.getItem("users") || "[]");
 
@@ -43,8 +41,7 @@ export const AuthProvider = ({ children }) => {
 
     return { success: true };
   };
-
-  // ✅ LOGOUT
+  
   const logout = () => {
     localStorage.removeItem("authUser");
     setIsAuthenticated(false);

@@ -25,8 +25,7 @@ const Navbar = () => {
     <div>
       <div
         id="navbar"
-        className="Navbar flex justify-between items-center px-12 py-2 w-full z-50 transition-all duration-500 bg-blue-500"
-      >
+        className="Navbar flex justify-between items-center px-12 py-2 w-full z-50 transition-all duration-500 bg-blue-500">
         <Link to="/" className="flex items-center space-x-2">
           <img src={logo_img} alt="Logo" className="w-12 h-12 rounded-2xl" />
           <h2 className="text-xl text-white font-bold">SlyStocks</h2>
@@ -39,8 +38,7 @@ const Navbar = () => {
             onChange={handleSearch}
             type="text"
             placeholder="Search products here"
-            className="pl-12 bg-white rounded-full pr-10 py-3 w-130 border-2 border-white focus:outline-none"
-          />
+            className="pl-12 bg-white rounded-full pr-10 py-3 w-130 border-2 border-white focus:outline-none"/>
         </div>
 
         <div className="flex items-center space-x-6">
@@ -58,22 +56,20 @@ const Navbar = () => {
           {isAuthenticated ? (
             <button
               onClick={handleLogout}
-              className="text-white border border-white px-3 py-1 rounded hover:bg-white hover:text-blue-600 transition"
-            >
+              className="text-white border border-white px-3 py-1 rounded hover:bg-white hover:text-blue-600 transition">
               Logout
             </button>
           ) : (
             <>
               <Link
                 to="/login"
-                className="text-white border border-white px-3 py-1 rounded hover:bg-white hover:text-blue-600 transition"
-              >
+                className="text-white border border-white px-3 py-1 rounded hover:bg-white hover:text-blue-600 transition">
                 Login
               </Link>
+
               <Link
                 to="/signup"
-                className="text-white border border-white px-3 py-1 rounded hover:bg-white hover:text-blue-600 transition"
-              >
+                className="text-white border border-white px-3 py-1 rounded hover:bg-white hover:text-blue-600 transition">
                 Sign Up
               </Link>
             </>

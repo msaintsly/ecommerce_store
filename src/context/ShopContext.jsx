@@ -145,8 +145,8 @@ const ShopContextProvider = ({ children }) => {
         decreaseAmount,
         quantity,
         total,
-      }}
-    >
+      }}>
+        
       {children}
     </ShopContext.Provider>
   );

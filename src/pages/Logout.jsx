@@ -7,8 +7,8 @@ const Logout = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    logout();         // clear session
-    navigate("/login"); // go back to login
+    logout();
+    navigate("/login");
   }, []);
 
   return <p className="p-6">Logging out...</p>;

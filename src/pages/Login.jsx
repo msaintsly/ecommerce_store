@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useNavigate, useLocation, Link } from "react-router-dom"; // ✅ include Link
+import { useNavigate, useLocation, Link } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 
 const Login = () => {
@@ -39,8 +39,7 @@ const Login = () => {
           required
           className="w-full p-3 mb-4 border rounded"
           value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
+          onChange={(e) => setEmail(e.target.value)}/>
 
         <input
           type="password"
@@ -48,8 +47,7 @@ const Login = () => {
           required
           className="w-full p-3 mb-6 border rounded"
           value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        />
+          onChange={(e) => setPassword(e.target.value)}/>
 
         <button
           type="submit"
@@ -57,8 +55,7 @@ const Login = () => {
         >
           Login
         </button>
-
-        {/* ✅ Sign Up Link */}
+        
         <p className="mt-4 text-sm text-center">
           Don't have an account?{" "}
           <Link to="/signup" className="text-blue-500 hover:underline">

@@ -28,6 +28,7 @@ const Contact = () => {
         Have questions or feedback? We'd love to hear from you.
       </p>
       <form onSubmit={handleSubmit} className="space-y-6">
+        
         <div>
           <label className="block mb-1 text-sm font-medium">Name</label>
           <input
@@ -36,9 +37,9 @@ const Contact = () => {
             value={formData.name}
             onChange={handleChange}
             className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:border-blue-500"
-            required
-          />
+            required/>
         </div>
+        
         <div>
           <label className="block mb-1 text-sm font-medium">Email</label>
           <input
@@ -47,9 +48,9 @@ const Contact = () => {
             value={formData.email}
             onChange={handleChange}
             className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:border-blue-500"
-            required
-          />
+            required/>
         </div>
+        
         <div>
           <label className="block mb-1 text-sm font-medium">Message</label>
           <textarea
@@ -58,13 +59,12 @@ const Contact = () => {
             value={formData.message}
             onChange={handleChange}
             className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:border-blue-500"
-            required
-          ></textarea>
+            required></textarea>
         </div>
+        
         <button
           type="submit"
-          className="w-full bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition"
-        >
+          className="w-full bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition">
           Send Message
         </button>
       </form>

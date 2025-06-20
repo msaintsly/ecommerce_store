@@ -16,7 +16,7 @@ const Signup = () => {
     const result = signup({ email, password });
 
     if (result.success) {
-      navigate("/"); // Redirect to home or cart
+      navigate("/");
     } else {
       setError(result.message);
     }
@@ -37,8 +37,7 @@ const Signup = () => {
           required
           className="w-full p-3 mb-4 border rounded"
           value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
+          onChange={(e) => setEmail(e.target.value)}/>
 
         <input
           type="password"
@@ -46,13 +45,11 @@ const Signup = () => {
           required
           className="w-full p-3 mb-6 border rounded"
           value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        />
+          onChange={(e) => setPassword(e.target.value)}/>
 
         <button
           type="submit"
-          className="w-full bg-green-500 text-white p-3 rounded hover:bg-green-600 transition"
-        >
+          className="w-full bg-green-500 text-white p-3 rounded hover:bg-green-600 transition">
           Sign Up
         </button>
       </form>

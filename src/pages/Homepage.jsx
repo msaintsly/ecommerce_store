@@ -7,10 +7,8 @@ import Product from '../components/Product'
 const Homepage = () => {
   return (
     <div>
-    <Hero />
-    <Product />
-    
-      
+      <Hero />
+      <Product />
     </div>
   )
 }
