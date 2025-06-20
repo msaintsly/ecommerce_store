@@ -47,7 +47,8 @@ const cart = () => {
             <span>Total Cost</span>
             <span>&#8358;{isNaN(total) ? 0 : total}</span>
           </div>
-          <button className='bg-blue-500 text-white rounded w-full mt-5 hover:bg-blue-600 p-3'>CHECKOUT</button>
+          <button 
+          className='bg-blue-500 text-white rounded w-full mt-5 hover:bg-blue-600 p-3'>CHECKOUT</button>
         </div>
       </div>
     </div>
