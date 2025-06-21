@@ -26,7 +26,9 @@ const VoiceScreenshot = () => {
         .toLowerCase();
 
       console.log("You said:", transcript);
-      console.log("🎯 'screenshot' detected — taking screenshot..."); {
+
+      if (transcript.includes("screenshot")) {
+        console.log("🎯 'screenshot' detected — taking screenshot...");
         takeScreenshot();
       }
     };
@@ -42,15 +44,22 @@ const VoiceScreenshot = () => {
   }, []);
 
   const takeScreenshot = () => {
-    html2canvas(document.body).then((canvas) => {
+    html2canvas(document.body, {
+      useCORS: true,
+      backgroundColor: "#ffffff",
+      windowWidth: document.documentElement.scrollWidth,
+      windowHeight: document.documentElement.scrollHeight,
+      scrollX: 0,
+      scrollY: -window.scrollY,
+    }).then((canvas) => {
       const link = document.createElement("a");
-      link.download = "screenshot.png";
-      link.href = canvas.toDataURL();
+      link.download = "homepage-screenshot.png";
+      link.href = canvas.toDataURL("image/png");
       link.click();
     });
   };
 
-  return null; 
+  return null;
 };
 
 export default VoiceScreenshot;

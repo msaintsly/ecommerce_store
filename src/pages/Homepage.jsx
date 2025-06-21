@@ -1,6 +1,6 @@
 import React from 'react'
-import Hero from '../components/Hero'
-import Product from '../components/Product'
+import Hero from '../pages/Hero'
+import Product from '../pages/Product'
 
 
 
